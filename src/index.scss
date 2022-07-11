@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #ec994b;
+  --secondary-color: #ffffff;
+  --primary-typography: #222224;
+  --secondary-typography: #ffffff;
+  --primary-background: #f9f9f9;
+  --secondary-background: #d9d9d9;
+}

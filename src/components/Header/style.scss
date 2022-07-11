@@ -1,0 +1,145 @@
+.header {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+  &__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__navbar-container {
+    display: block;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__navbar-aside {
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    right: -300px;
+    transition: 0.3s all linear;
+    top: 0;
+    background-color: var(--secondary-color);
+    padding: 20px 0 0 20px;
+    box-shadow: none;
+    height: 100%;
+
+    &.open {
+      box-shadow: -5px 0px 16px 0px rgba(0, 0, 0, 0.5);
+      right: 0;
+
+      @media screen and (min-width: 768px) {
+        right: -300px;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      li {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: var(--primary-typography);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__bag {
+    display: flex;
+    background-color: var(--primary-background);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__button-open,
+  &__button-close {
+    display: none;
+    background-color: var(--primary-background);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.2s all linear;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--secondary-background);
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 40px 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 30px;
+  }
+}
