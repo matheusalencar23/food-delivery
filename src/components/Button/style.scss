@@ -8,21 +8,21 @@
 
   &__primary {
     background-color: var(--primary-color);
-    color: var(--secondary-typography);
+    color: #fff;
 
     &:hover {
       background-color: transparent;
-      color: var(--primary-typography);
+      color: var(--primary-color);
     }
   }
 
   &__secondary {
     background-color: transparent;
-    color: var(--primary-typography);
+    color: var(--primary-color);
 
     &:hover {
       background-color: var(--primary-color);
-      color: var(--secondary-typography);
+      color: #fff;
     }
   }
 

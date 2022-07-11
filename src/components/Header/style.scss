@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  position: fixed;
+  background-color: #fff;
 
   &__logo {
     font-weight: 700;
@@ -28,10 +30,11 @@
     right: -300px;
     transition: 0.3s all linear;
     top: 0;
-    background-color: var(--secondary-color);
+    background-color: #fff;
     padding: 20px 0 0 20px;
     box-shadow: none;
     height: 100%;
+    z-index: 999;
 
     &.open {
       box-shadow: -5px 0px 16px 0px rgba(0, 0, 0, 0.5);
@@ -47,21 +50,21 @@
   &__navbar {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      gap: 15px;
 
       li {
         font-weight: 500;
         font-size: 16px;
         line-height: 100%;
         letter-spacing: 0.01em;
-        color: var(--primary-typography);
+        color: var(--typography);
 
         &:hover {
           cursor: pointer;
@@ -87,9 +90,11 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    transition: 0.2s all linear;
 
     &:hover {
       cursor: pointer;
+      background-color: var(--secondary-background);
     }
 
     @media screen and (max-width: 768px) {
@@ -136,7 +141,7 @@
   }
 
   @media screen and (max-width: 992px) {
-    padding: 40px 60px;
+    padding: 40px 50px;
   }
 
   @media screen and (max-width: 768px) {

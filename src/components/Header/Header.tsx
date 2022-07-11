@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <div className="header__logo">F&D</div>
+        <h1 className="header__logo">F&D</h1>
         <div className="header__navbar-container">{navBar}</div>
         <button
           className="header__button-open"
