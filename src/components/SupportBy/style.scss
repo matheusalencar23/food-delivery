@@ -1,0 +1,11 @@
+.support {
+  &__container {
+    margin-top: 78px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 80px;
+  }
+}

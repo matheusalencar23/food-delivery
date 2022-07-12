@@ -1,0 +1,9 @@
+.services {
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+}
