@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "./style.scss";
 
 import { imageList } from "./data";
+import Rating from "../../components/Rating/Rating";
 
 export default function Popular() {
   return (
@@ -43,9 +44,9 @@ export default function Popular() {
               <span className="popular__carousel-data popular__carousel-price">
                 ${data.price}
               </span>
-              <div className="popular__carousel-data">
+              <div className="popular__carousel-data popular__carousel-info">
                 <span className="popular__carousel-name">{data.name}</span>
-                <span className="popular__carousel-stars">{data.review}</span>
+                <Rating rating={data.review} />
               </div>
             </SwiperSlide>
           );

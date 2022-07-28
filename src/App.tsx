@@ -1,6 +1,7 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
 import SupportBy from "./components/SupportBy/SupportBy";
+import About from "./sections/About/About";
 import Comments from "./sections/Comments/Comments";
 import Hero from "./sections/Hero/Hero";
 import OurServices from "./sections/OurServices/OurServices";
@@ -16,6 +17,7 @@ function App() {
         <OurServices />
         <Popular />
         <Comments />
+        <About />
       </main>
     </>
   );
