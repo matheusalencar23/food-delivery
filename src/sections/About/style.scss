@@ -39,6 +39,14 @@
     h4,
     h5 {
       text-align: left;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 20px;
     }
 
     &-user {
