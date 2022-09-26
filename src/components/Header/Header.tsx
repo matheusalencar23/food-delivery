@@ -17,7 +17,7 @@ export default function Header() {
   const navBar = (
     <nav className="header__navbar">
       <ul>
-        <li>Home</li>
+        <li className="active">Home</li>
         <li>Menu</li>
         <li>Services</li>
         <li>Contact</li>

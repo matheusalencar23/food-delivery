@@ -66,9 +66,21 @@
         line-height: 100%;
         letter-spacing: 0.01em;
         color: var(--typography);
+        position: relative;
 
         &:hover {
           cursor: pointer;
+        }
+
+        &.active::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 1px;
+          right: 1px;
+          height: 3px;
+          background-color: var(--primary-color);
+          border-radius: 1px;
         }
       }
 
