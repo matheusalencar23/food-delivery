@@ -55,7 +55,14 @@ export default function Footer() {
         </div>
       </div>
       <span className="footer__rights">
-        &copy; NameBrand 2022 - All Rights Reserved
+        Design available in{" "}
+        <a
+          rel="noreferrer"
+          href="https://www.figma.com/community/file/1118911450477515652"
+          target="_blank"
+        >
+          Figma
+        </a>
       </span>
     </footer>
   );
